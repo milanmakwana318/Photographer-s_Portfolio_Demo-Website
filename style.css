@@ -78,18 +78,20 @@ body {
     display: flex;
     width: 35vw;
     list-style: none;
-    
+
     align-items: center;
     gap: var(--spacing-lg);
     /* background-color: #00e1ff; */
-    border: 2PX solid black;
+    /* border: 2PX solid black; */
     /* margin: 0 2VW; */
 }
-.nav-1{
+
+.nav-1 {
     width: 50vw;
     /* background-color: #00e1ff; */
     justify-content: space-evenly;
 }
+
 .nav-2 {
     gap: var(--spacing-xs);
     margin: 0 0;
@@ -623,6 +625,18 @@ body {
     margin: 0 auto 1vh;
 }
 
+.footer-input {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+}
+
+.footer-input i {
+    color: var(--clr-btn-border);
+    font-size: var(--font-size-lg);
+}
+
 .mainFooter-info span,
 .mainFooter-info p {
     font-size: var(--spacing-md);
@@ -651,6 +665,19 @@ body {
     color: var(--clr-btn-text);
 }
 
+
+::-webkit-scrollbar {
+    width: 5px;    
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;    
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-btn-border);    
+    border-radius: 10px;
+}
 
 /* ---------- ANIMATION KEYFRAMES ---------- */
 @keyframes fadeInUp {
